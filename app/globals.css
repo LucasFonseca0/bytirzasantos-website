@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 96%; /* Esbranquiçado */
+    --foreground: 45 70% 30%; /* Dourado escuro */
+
+    --card: 40 20% 96%; /* Esbranquiçado */
+    --card-foreground: 45 70% 30%; /* Dourado escuro */
+
+    --popover: 40 20% 96%; /* Esbranquiçado */
+    --popover-foreground: 45 70% 30%; /* Dourado escuro */
+
+    --primary: 50 70% 50%; /* Dourado */
+    --primary-foreground: 40 20% 96%; /* Esbranquiçado */
+
+    --secondary: 50 50% 70%; /* Dourado claro */
+    --secondary-foreground: 45 70% 30%; /* Dourado escuro */
+
+    --muted: 50 50% 70%; /* Dourado claro */
+    --muted-foreground: 45 60% 40%; /* Dourado médio */
+
+    --accent: 50 50% 70%; /* Dourado claro */
+    --accent-foreground: 45 70% 30%; /* Dourado escuro */
+
+    --destructive: 0 70% 60%; /* Vermelho */
+    --destructive-foreground: 40 20% 96%; /* Esbranquiçado */
+
+    --border: 50 60% 88%; /* Esbranquiçado suave */
+    --input: 50 60% 88%; /* Esbranquiçado suave */
+    --ring: 45 70% 30%; /* Dourado escuro */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 45 70% 30%; /* Dourado escuro */
+    --foreground: 40 20% 96%; /* Esbranquiçado */
+
+    --card: 45 70% 30%; /* Dourado escuro */
+    --card-foreground: 40 20% 96%; /* Esbranquiçado */
+
+    --popover: 45 70% 30%; /* Dourado escuro */
+    --popover-foreground: 40 20% 96%; /* Esbranquiçado */
+
+    --primary: 40 20% 96%; /* Esbranquiçado */
+    --primary-foreground: 45 70% 30%; /* Dourado escuro */
+
+    --secondary: 50 60% 50%; /* Dourado médio */
+    --secondary-foreground: 40 20% 96%; /* Esbranquiçado */
+
+    --muted: 50 60% 50%; /* Dourado médio */
+    --muted-foreground: 45 60% 40%; /* Dourado claro */
+
+    --accent: 50 60% 50%; /* Dourado médio */
+    --accent-foreground: 40 20% 96%; /* Esbranquiçado */
+
+    --destructive: 0 50% 40%; /* Vermelho escuro */
+    --destructive-foreground: 40 20% 96%; /* Esbranquiçado */
+
+    --border: 50 60% 50%; /* Dourado médio */
+    --input: 50 60% 50%; /* Dourado médio */
+    --ring: 45 70% 30%; /* Dourado escuro */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .highlight {
+    @apply text-secondary-foreground font-semibold;
+  }
+}
