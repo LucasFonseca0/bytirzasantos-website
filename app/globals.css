@@ -80,3 +80,13 @@
     @apply text-secondary-foreground font-semibold;
   }
 }
+
+.text-gold {
+  color: #a28c0a;
+}
+
+.border-gold {
+  border-color: #FFD700;
+}
+
+
