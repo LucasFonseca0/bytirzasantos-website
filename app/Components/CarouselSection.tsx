@@ -69,7 +69,7 @@ const CarouselSection = () => {
         <CarouselContent>
           {CaroulselItens.map((item, index) => (
             <CarouselItem key={index} className='basis-2/3 sm:basis-1/2 '>
-              <div className=" bg-primary-foreground rounded border-2 border-gold">
+              <div className=" bg-primary-foreground rounded border-[1px] border-gold">
                 <Image src={item.imageURL} alt={`imagem do produto ${item.title}`} width={4000} height={4000} className='rounded'></Image>
                 <div className='p-4'>
                   <h3 className='text-base sm:text-lg font-semibold mb-4 text-gold'>{item.title}</h3>
